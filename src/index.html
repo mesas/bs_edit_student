@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LeanMood Admin - Edit Student</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="StyleSheet" href="./content/compile_css/main.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                  <div class="row">
+                  <div class="col-xs-1 hidden-xs">
+                    <img alt="user" src="./content/images/user.png"/>
+                  </div>
+                     <div class="col-xs-11">
+                         <span class="user">Max Lecturer</span>
+                         <span class="role">Trainer</span>
+                    </div>
+                  </div>
+                </div>                 
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+      <!-- Body -->
+      <h1>Joseph Gonzalez</h1>
+      <div class="row">
+        <form role="form">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#pnlMain" aria-controls="pnlMain" role="tab" data-toggle="tab">Main</a>
+            </li>
+            <li role="presentation">
+              <a href="#pnlTraining" aria-controls="pnlTraining" role="tab" data-toggle="tab">Trainings</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="pnlMain">
+                <div>
+                  <div class="form-group">
+                    <label for="center" class="hidden-xs">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name"/>
+                  </div>
+                </div>
+                <div >
+                  <div class="form-group">
+                    <label for="services" class="hidden-xs">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter your email"/>
+                  </div>
+                </div>
+                <div class="form-group checkbox">
+                  <label><input type="checkbox" value="">Active</label>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="pnlTraining">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Master LemonCode I</td>
+                    <td>01/06/2016</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <label for="course">Training:</label>
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-9">
+                  <select class="form-control listtraining" id="course">
+                    <option>2016 - Master Lemoncode</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                  <button type="submit" class="btn btn-default pull-left btnAdd">Add</button>
+                </div>
+              </div>               
+            </div>
+          </div>          <!-- Tab panes -->
+          <button type="submit" class="btn btn-primary pull-right col-xs-12 col-md-2 col-md-offset-10">Save</button>
+        </form>
+      </div>
+  </div>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+</html>
